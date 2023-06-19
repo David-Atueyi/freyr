@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: regular;
+    src: url(../fonts/Cinzel-Regular.ttf);
+}
+
+.container {
+    min-width: 345px;
+    font-family: regular;
+}
+
+.container-child {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container-child p {
+    font-size: 12px;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+    padding: 3rem 0rem;
+}
+
+header .logo img {
+    width: 2em;
+    height: 2em;
+}
+
+header nav {
+    background: #ddd;
+    box-shadow: 0px 1px 3px #ddd;
+}
+
+header nav a {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0em;
+    padding: 1rem 0rem;
+    text-decoration: none;
+    color: #000;
+    background: #fff;
+    transition: all 1s;
+}
+
+header nav a:hover {
+    background: #ddd;
+}
+
+main {
+    margin: 0em 1.5em;
+}
+
+main .card {
+    background: #ddd;
+    margin-bottom: 1em;
+    transition: all 1s;
+}
+
+main .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 4px 4px 5px #ddd;
+    background: #fff;
+}
+
+main .card-img {
+    margin-bottom: 15px;
+    height: 200px;
+}
+
+main .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .card-text {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .first-row {
+    display: flex;
+    flex-direction: column;
+}
+
+main .first-row .content-one .content-one_img {
+    margin-bottom: 15px;
+}
+
+main .first-row .content-one .content-one_img img {
+    width: 100%;
+    height: 100%;
+}
+
+main .first-row .content-one .content-one_text {
+    width: 90%;
+    margin: 0px auto 15px;
+}
+
+main .first-row .content-one .content-one_text h3 {
+    margin-bottom: 15px;
+}
+
+main .content-two {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    text-align: center;
+    margin: 1em;
+    padding: 2em;
+    font-weight: 700;
+}
+
+footer a {
+    font-size: 14px;
+}
+
+
+@media (min-width:720px) {
+    .container-child {
+        max-width: 1000px;
+    }
+
+    header {
+        flex-direction: row;
+        margin: 0px 20px;
+    }
+
+    header nav {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background: #fff;
+        box-shadow: 0px 0px 0px;
+    }
+
+    header nav a {
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    main .card {
+        width: 50%;
+    }
+
+    main .first-row .content-one {
+        width: 100%;
+    }
+
+    main .first-row .content-two {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    main .second-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    main .second-row .card {
+        width: 48.8%;
+    }
+
+}
+
+@media (min-width:1000px) {
+    main .second-row .card {
+        width: 32.28%;
+    }
+}
+
+@media (min-width:1200px) {
+    main .card-img {
+        height: 150px;
+    }
+
+    main .first-row {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    main .first-row .content-one {
+        width: 50%;
+    }
+
+    main .first-row .content-two {
+        width: 50%;
+    }
+
+    main .first-row .card-text {
+        height: 280px;
+    }
+
+    main .second-row {
+        flex-wrap: nowrap;
+    }
+
+    main .second-row .card-text {
+        height: 280px;
+    }
+}
