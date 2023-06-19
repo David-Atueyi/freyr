@@ -57,7 +57,7 @@ header nav a {
     text-decoration: none;
     color: #000000e8;
     background: #fff;
-    transition: all 1s;
+    transition: all .9s;
 }
 
 header nav a:hover {
@@ -71,7 +71,7 @@ main {
 main .card {
     background: #ddd;
     margin-bottom: 1em;
-    transition: all 1s;
+    transition: all .9s;
 }
 
 main .card:hover {
